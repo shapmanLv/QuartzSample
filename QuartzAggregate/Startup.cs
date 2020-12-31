@@ -66,7 +66,7 @@ namespace QuartzAggregate
                     ["quartz.jobStore.dataSource"] = "myDS", // 配置数据源名称
                     ["quartz.jobStore.tablePrefix"] = "QRTZ_", // quartz所使用的表，在当前数据库中的表前缀
                     ["quartz.jobStore.driverDelegateType"] = "Quartz.Impl.AdoJobStore.StdAdoDelegate, Quartz",  // 配置AdoJobStore使用的DriverDelegate
-                    ["quartz.dataSource.myDS.connectionString"] = "server=shapman.cn;uid=root;pwd=@@Shapman123$$;database=quartzsample", // 配置数据库连接字符串，自己处理好连接字符串，我这里就直接这么写了
+                    ["quartz.dataSource.myDS.connectionString"] = "server=;uid=;pwd=;database=", // 配置数据库连接字符串，自己处理好连接字符串，我这里就直接这么写了
                     ["quartz.dataSource.myDS.provider"] = "mysql-custom", // 配置数据库提供程序（这里是自定义的，定义的代码在上面）
                     ["quartz.jobStore.lockHandler.type"] = "Quartz.Impl.AdoJobStore.UpdateLockRowSemaphore, Quartz",
                     ["quartz.serializer.type"] = "binary",
